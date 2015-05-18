@@ -1,0 +1,13 @@
+docs:
+    setup:
+        name: Setup
+        items:
+            -
+                name: Installation
+                file: index
+
+    getting-started:
+        name: Getting Started
+        items:
+            -
+                name: Controllers, Views & Styles

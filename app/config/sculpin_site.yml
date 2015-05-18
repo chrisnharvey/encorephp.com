@@ -1,0 +1,5 @@
+title: EncorePHP
+url: http://encorephp.com
+
+imports:
+    - docs.yml

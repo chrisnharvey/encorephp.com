@@ -1,0 +1,28 @@
+{% extends "default" %}
+
+{% block content_wrapper %}
+    <div class="row">
+        
+        <div class="col-md-9" role="main">
+            {{ page.blocks.content|raw }}
+        </div>
+
+        <div class="col-md-3" role="complementary">
+          <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
+            <ul class="nav bs-docs-sidenav">
+              
+                <li>
+                    {% for section in site.docs %}
+                        <h2>{{ section.name }}</h2>
+                        {% for item in section.items %}
+                            <a href="{{ item.slug }}">{{ item.name }}</a>
+                        {% endfor %}
+                    {% endfor %}
+                </li>
+            </ul>
+            
+          </nav>
+        </div>
+
+    </div>
+{% endblock %}

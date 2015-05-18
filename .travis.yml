@@ -1,0 +1,18 @@
+language: php
+
+env:
+    global:
+        secure: "mJainBk+sqKDBy/rJv004+egOoZufGdsCEEBc6VEXdRWtTmhrjCgsQbyB2CBk6rfa93rkqC/P6Z/xe7pE8cM6WlUoepPgfZxfolw+SOFCFEdJg7yTd5sn5m9HJD0kEGmUGZi9TXI5fxT0qW1WXKD8p4hEbzPx0KE1MylqBsak4E="
+
+php:
+  - 5.6
+
+before_script:
+    - travis_retry curl -O https://download.sculpin.io/sculpin.phar
+    - travis_retry php sculpin.phar install
+
+script: 
+    - php sculpin.phar generate --env=prod
+
+after_success:
+    - travis_retry bin/deploy
