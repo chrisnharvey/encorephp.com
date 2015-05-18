@@ -8,7 +8,7 @@ Welcome to the EncorePHP website.
 
 EncorePHP is a PHP framework for building native cross-platform desktop applications in PHP.
 
-Our website is still under construction, but you can find our latest commits to EncorePHP on our [GitHub page](http://github.com/encorephp), and API reference [here](/api).
+Our website is still under construction, but you can find our latest commits to EncorePHP on our [GitHub page](http://github.com/encorephp), and API reference [here](http://api.encorephp.com/).
 
 Please feel free to join us on our #encorephp [IRC channel](/irc) on Freenode.
 
